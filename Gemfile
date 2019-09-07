@@ -10,6 +10,8 @@ gem 'bcrypt'
 gem 'faker',          '1.7.3'
 gem 'will_paginate',           '3.1.7'
 gem 'bootstrap-will_paginate', '1.0.0'
+gem 'carrierwave',             '1.2.2'
+gem 'mini_magick',             '4.7.0'
 # Use sqlite3 as the database for Active Record
 gem 'pg'
 # Use Puma as the app server
@@ -65,6 +67,10 @@ group :test do
   gem 'minitest'
   gem 'minitest-reporters'
   gem 'rails-controller-testing'
+end
+
+group :production do
+  gem 'fog', '1.42'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
